@@ -4,8 +4,8 @@ This repository is an example of refactoring an anemic domain model into a rich 
 
 There are several sections:
     - AnemicDomainModel - Contains the original project
-    - RichDomainModel - Contains the refactored anemic domain \\\ TODO
-    - RichDomainWithCleanArchitecture - Contains the updated rich domain using the clean architecture pattern \\ TODO
+    - RichDomainModel - Contains the refactored anemic domain \\\ TODO  
+    - RichDomainWithCleanArchitecture - Contains the updated rich domain using the clean architecture pattern \\\ TODO  
     
 # Getting Started
 Clone the repository
