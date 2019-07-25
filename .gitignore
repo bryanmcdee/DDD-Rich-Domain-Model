@@ -1,0 +1,14 @@
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/*
+
+AnemicDomainModel/.vs/*
+AnemicDomainModel/Api/obj/*
+AnemicDomainModel/Api/debug/*
+AnemicDomainModel/Api/bin/*
+
+AnemicDomainModel/Logic/obj/*
+AnemicDomainModel/Logic/debug/*
+AnemicDomainModel/Logic/bin/*

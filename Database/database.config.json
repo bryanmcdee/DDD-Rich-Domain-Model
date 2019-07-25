@@ -1,0 +1,7 @@
+{    
+    "ConnectionString": "Data Source=.;Initial Catalog=master;Integrated Security=True",
+    "Database": "OnlineGym",
+    "DataSource": ".",
+    "DatabaseUserName": "",
+    "DatabasePassword": ""
+  }
