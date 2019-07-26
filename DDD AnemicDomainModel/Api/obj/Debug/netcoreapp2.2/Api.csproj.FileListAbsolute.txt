@@ -1,0 +1,51 @@
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Api\bin\Debug\netcoreapp2.2\Api.deps.json
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Api\bin\Debug\netcoreapp2.2\Api.runtimeconfig.json
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Api\bin\Debug\netcoreapp2.2\Api.runtimeconfig.dev.json
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Api\bin\Debug\netcoreapp2.2\Api.dll
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Api\bin\Debug\netcoreapp2.2\Api.pdb
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Api\bin\Debug\netcoreapp2.2\Logic.dll
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Api\bin\Debug\netcoreapp2.2\Logic.pdb
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Api\obj\Debug\netcoreapp2.2\Api.csprojAssemblyReference.cache
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Api\obj\Debug\netcoreapp2.2\Api.csproj.CoreCompileInputs.cache
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Api\obj\Debug\netcoreapp2.2\Api.RazorAssemblyInfo.cache
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Api\obj\Debug\netcoreapp2.2\Api.RazorAssemblyInfo.cs
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Api\obj\Debug\netcoreapp2.2\Api.AssemblyInfoInputs.cache
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Api\obj\Debug\netcoreapp2.2\Api.AssemblyInfo.cs
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Api\obj\Debug\netcoreapp2.2\Api.RazorTargetAssemblyInfo.cache
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Api\obj\Debug\netcoreapp2.2\Api.csproj.CopyComplete
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Api\obj\Debug\netcoreapp2.2\Api.dll
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Api\obj\Debug\netcoreapp2.2\Api.pdb
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Api\bin\Debug\netcoreapp2.2\Api.deps.json
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Api\bin\Debug\netcoreapp2.2\Api.runtimeconfig.json
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Api\bin\Debug\netcoreapp2.2\Api.runtimeconfig.dev.json
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Api\bin\Debug\netcoreapp2.2\Api.dll
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Api\bin\Debug\netcoreapp2.2\Api.pdb
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Api\bin\Debug\netcoreapp2.2\Logic.dll
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Api\bin\Debug\netcoreapp2.2\Logic.pdb
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Api\obj\Debug\netcoreapp2.2\Api.csprojAssemblyReference.cache
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Api\obj\Debug\netcoreapp2.2\Api.csproj.CoreCompileInputs.cache
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Api\obj\Debug\netcoreapp2.2\Api.RazorAssemblyInfo.cache
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Api\obj\Debug\netcoreapp2.2\Api.RazorAssemblyInfo.cs
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Api\obj\Debug\netcoreapp2.2\Api.AssemblyInfoInputs.cache
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Api\obj\Debug\netcoreapp2.2\Api.AssemblyInfo.cs
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Api\obj\Debug\netcoreapp2.2\Api.RazorTargetAssemblyInfo.cache
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Api\obj\Debug\netcoreapp2.2\Api.csproj.CopyComplete
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Api\obj\Debug\netcoreapp2.2\Api.dll
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Api\obj\Debug\netcoreapp2.2\Api.pdb
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Api\bin\Debug\netcoreapp2.2\Api.deps.json
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Api\bin\Debug\netcoreapp2.2\Api.runtimeconfig.json
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Api\bin\Debug\netcoreapp2.2\Api.runtimeconfig.dev.json
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Api\bin\Debug\netcoreapp2.2\Api.dll
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Api\bin\Debug\netcoreapp2.2\Api.pdb
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Api\bin\Debug\netcoreapp2.2\Logic.dll
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Api\bin\Debug\netcoreapp2.2\Logic.pdb
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Api\obj\Debug\netcoreapp2.2\Api.csprojAssemblyReference.cache
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Api\obj\Debug\netcoreapp2.2\Api.csproj.CoreCompileInputs.cache
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Api\obj\Debug\netcoreapp2.2\Api.RazorAssemblyInfo.cache
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Api\obj\Debug\netcoreapp2.2\Api.RazorAssemblyInfo.cs
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Api\obj\Debug\netcoreapp2.2\Api.AssemblyInfoInputs.cache
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Api\obj\Debug\netcoreapp2.2\Api.AssemblyInfo.cs
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Api\obj\Debug\netcoreapp2.2\Api.RazorTargetAssemblyInfo.cache
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Api\obj\Debug\netcoreapp2.2\Api.csproj.CopyComplete
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Api\obj\Debug\netcoreapp2.2\Api.dll
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Api\obj\Debug\netcoreapp2.2\Api.pdb

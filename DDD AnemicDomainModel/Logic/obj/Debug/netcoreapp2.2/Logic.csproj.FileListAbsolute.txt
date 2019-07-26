@@ -1,0 +1,29 @@
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Logic\bin\Debug\netcoreapp2.2\Logic.deps.json
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Logic\bin\Debug\netcoreapp2.2\Logic.dll
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Logic\bin\Debug\netcoreapp2.2\Logic.pdb
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Logic\bin\Debug\netcoreapp2.2\Newtonsoft.Json.dll
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Logic\bin\Debug\netcoreapp2.2\Newtonsoft.Json.xml
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Logic\obj\Debug\netcoreapp2.2\Logic.csproj.CoreCompileInputs.cache
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Logic\obj\Debug\netcoreapp2.2\Logic.AssemblyInfoInputs.cache
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Logic\obj\Debug\netcoreapp2.2\Logic.AssemblyInfo.cs
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Logic\obj\Debug\netcoreapp2.2\Logic.csproj.CopyComplete
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Logic\obj\Debug\netcoreapp2.2\Logic.dll
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Logic\obj\Debug\netcoreapp2.2\Logic.pdb
+C:\Users\bryan.mcdonald\source\repos\RichDomainModel\Logic\obj\Debug\netcoreapp2.2\Logic.csprojAssemblyReference.cache
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Logic\bin\Debug\netcoreapp2.2\Logic.deps.json
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Logic\bin\Debug\netcoreapp2.2\Logic.dll
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Logic\bin\Debug\netcoreapp2.2\Logic.pdb
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Logic\obj\Debug\netcoreapp2.2\Logic.csproj.CoreCompileInputs.cache
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Logic\obj\Debug\netcoreapp2.2\Logic.AssemblyInfoInputs.cache
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Logic\obj\Debug\netcoreapp2.2\Logic.AssemblyInfo.cs
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Logic\obj\Debug\netcoreapp2.2\Logic.dll
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\AnemicDomainModel\Logic\obj\Debug\netcoreapp2.2\Logic.pdb
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Logic\bin\Debug\netcoreapp2.2\Logic.deps.json
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Logic\bin\Debug\netcoreapp2.2\Logic.dll
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Logic\bin\Debug\netcoreapp2.2\Logic.pdb
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Logic\obj\Debug\netcoreapp2.2\Logic.csprojAssemblyReference.cache
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Logic\obj\Debug\netcoreapp2.2\Logic.csproj.CoreCompileInputs.cache
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Logic\obj\Debug\netcoreapp2.2\Logic.AssemblyInfoInputs.cache
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Logic\obj\Debug\netcoreapp2.2\Logic.AssemblyInfo.cs
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Logic\obj\Debug\netcoreapp2.2\Logic.dll
+C:\Users\bryan.mcdonald\source\repos\DDD-Rich-Domain-Model\DDD AnemicDomainModel\Logic\obj\Debug\netcoreapp2.2\Logic.pdb
