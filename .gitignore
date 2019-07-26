@@ -8,7 +8,14 @@ AnemicDomainModel/.vs/*
 AnemicDomainModel/Api/obj/*
 AnemicDomainModel/Api/debug/*
 AnemicDomainModel/Api/bin/*
-
 AnemicDomainModel/Logic/obj/*
 AnemicDomainModel/Logic/debug/*
 AnemicDomainModel/Logic/bin/*
+
+RichDomainModel/.vs/*
+RichDomainModel/Api/obj/*
+RichDomainModel/Api/debug/*
+RichDomainModel/Api/bin/*
+RichDomainModel/Logic/obj/*
+RichDomainModel/Logic/debug/*
+RichDomainModel/Logic/bin/*
