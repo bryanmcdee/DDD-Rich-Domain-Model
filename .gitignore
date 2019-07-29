@@ -4,18 +4,19 @@
 *.sln.docstates
 .vs/*
 
-AnemicDomainModel/.vs/*
-AnemicDomainModel/Api/obj/*
-AnemicDomainModel/Api/debug/*
-AnemicDomainModel/Api/bin/*
-AnemicDomainModel/Logic/obj/*
-AnemicDomainModel/Logic/debug/*
-AnemicDomainModel/Logic/bin/*
+DDD AnemicDomainModel/.vs/*
+DDD AnemicDomainModel/Api/obj/*
+DDD AnemicDomainModel/Api/debug/*
+DDD AnemicDomainModel/Api/bin/*
+DDD AnemicDomainModel/Logic/obj/*
+DDD AnemicDomainModel/Logic/debug/*
+DDD AnemicDomainModel/Logic/bin/*
 
-RichDomainModel/.vs/*
-RichDomainModel/Api/obj/*
-RichDomainModel/Api/debug/*
-RichDomainModel/Api/bin/*
-RichDomainModel/Logic/obj/*
-RichDomainModel/Logic/debug/*
-RichDomainModel/Logic/bin/*
+DDD RichDomainModel/.vs/*
+DDD RichDomainModel/Api/obj/*
+DDD RichDomainModel/Api/debug/*
+DDD RichDomainModel/Api/bin/*
+DDD RichDomainModel/Logic/obj/*
+DDD RichDomainModel/Logic/debug/*
+DDD RichDomainModel/Logic/bin/*
+DDD RichDomainModel/.vs/config/applicationhost.config
