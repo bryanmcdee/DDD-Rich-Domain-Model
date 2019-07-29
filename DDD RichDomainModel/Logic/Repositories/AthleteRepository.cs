@@ -16,12 +16,6 @@ namespace Logic.Repositories
         {
             return _unitOfWork
                 .Query<Athlete>()
-                .AsEnumerable()
-                .Select(x =>
-                {
-                    x.PurchasedWorkoutRoutine = null;
-                    return x;
-                })
                 .ToList();
         }
 

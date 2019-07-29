@@ -1,5 +1,4 @@
 using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -16,13 +15,9 @@ namespace Logic.Entities
         [RegularExpression(@"^(.+)@(.+)$", ErrorMessage = "Email is invalid")]
         public virtual string Email { get; set; }
 
-        [JsonConverter(typeof(StringEnumConverter))]
         public virtual AthleteStatusType Status { get; set; }
-
         public virtual DateTime? StatusExpirationDate { get; set; }
-
         public virtual decimal MoneySpent { get; set; }
-
         public virtual IList<PurchasedWorkoutRoutine> PurchasedWorkoutRoutine { get; set; }
     }
 }
