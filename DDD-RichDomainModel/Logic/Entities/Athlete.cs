@@ -6,8 +6,21 @@ namespace Logic.Entities
 {
     public class Athlete : Entity
     {
-        public virtual AthleteName Name { get; set; }
-        public virtual Email Email { get; set; }
+        private string _name;
+        public virtual AthleteName Name
+        {
+            get => AthleteName.Create(_name).Value;
+            set => _name = value.Value;
+        }
+
+        private string _email;
+
+        public virtual Email Email
+        {
+            get => Email.Create(_email).Value;
+            set => _email = value.Value;
+        }
+
         public virtual AthleteStatusType Status { get; set; }
         public virtual DateTime? StatusExpirationDate { get; set; }
         public virtual decimal MoneySpent { get; set; }
