@@ -97,7 +97,7 @@ namespace Api.Controllers
                 {
                     Name = athleteNameRequest.Value,
                     Email = emailRequest.Value,
-                    MoneySpent = 0,
+                    MoneySpent = Dollars.Of(0),
                     Status = AthleteStatusType.Regular,
                     StatusExpirationDate = null
                 };

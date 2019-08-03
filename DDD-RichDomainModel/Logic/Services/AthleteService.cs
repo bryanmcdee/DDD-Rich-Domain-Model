@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using Logic.Entities;
+using Logic.ValueObjects;
 
 namespace Logic.Services
 {
@@ -13,19 +14,19 @@ namespace Logic.Services
             workoutRoutineService = workoutRoutineSvc;
         }
 
-        private decimal CalculatePrice(AthleteStatusType athleteStatusType, DateTime? statusExpirationDate, LicensingModelType licensingModelType)
+        private Dollars CalculatePrice(AthleteStatusType athleteStatusType, DateTime? statusExpirationDate, LicensingModelType licensingModelType)
         {
-            decimal price;
+            Dollars price;
             switch (licensingModelType)
             {
                 case LicensingModelType.TwoDays:
-                    price = 2;
+                    price = Dollars.Of(2);
                     break;
                 case LicensingModelType.ThirtyDays:
-                    price = 4;
+                    price = Dollars.Of(4);
                     break;
                 case LicensingModelType.LifeLong:
-                    price = 8;
+                    price = Dollars.Of(8);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -42,7 +43,7 @@ namespace Logic.Services
         public void PurchaseWorkoutRoutine(Athlete athlete, WorkoutRoutine workoutRoutine)
         {
             DateTime? expirationDate = workoutRoutineService.GetExpirationDate(workoutRoutine.LicensingModel);
-            decimal price = CalculatePrice(athlete.Status, athlete.StatusExpirationDate, workoutRoutine.LicensingModel);
+            Dollars price = CalculatePrice(athlete.Status, athlete.StatusExpirationDate, workoutRoutine.LicensingModel);
 
             var purchasedWorkoutRoutine = new PurchasedWorkoutRoutine
             {

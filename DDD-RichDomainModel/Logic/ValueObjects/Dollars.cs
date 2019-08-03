@@ -35,14 +35,24 @@
             return Value.GetHashCode();
         }
 
+        public static Dollars Of(decimal dollarAmount)
+        {
+            return Create(dollarAmount).Value;
+        }
+
+        public static Dollars operator *(Dollars dollars, decimal multiplier)
+        {
+            return new Dollars(dollars.Value * multiplier);
+        }
+
+        public static Dollars operator +(Dollars dollars1, Dollars dollars2)
+        {
+            return new Dollars(dollars1.Value + dollars2);
+        }
+
         public static implicit operator decimal(Dollars dollarAmount)
         {
             return dollarAmount.Value;
-        }
-
-        public static explicit operator Dollars(decimal dollarAmount)
-        {
-            return Create(dollarAmount).Value;
         }
     }
 }
