@@ -5,6 +5,7 @@ using Logic.Dtos;
 using Logic.Entities;
 using Logic.Repositories;
 using Logic.Services;
+using Logic.ValueObjects;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
@@ -36,8 +37,8 @@ namespace Api.Controllers
             var dto = new AthleteDto()
             {
                 Id = athlete.Id,
-                Name = athlete.Name,
-                Email = athlete.Email,
+                Name = athlete.Name.Value,
+                Email = athlete.Email.Value,
                 Status = athlete.Status.ToString(),
                 StatusExpirationDate = athlete.StatusExpirationDate,
                 MoneySpent = athlete.MoneySpent,
@@ -64,8 +65,8 @@ namespace Api.Controllers
             var dto = athletes.Select(s => new AthleteInListDto()
             {
                 Id = s.Id,
-                Name = s.Name,
-                Email = s.Email,
+                Name = s.Name.Value,
+                Email = s.Email.Value,
                 Status = s.Status.ToString(),
                 StatusExpirationDate = s.StatusExpirationDate,
                 MoneySpent = s.MoneySpent,
@@ -91,8 +92,8 @@ namespace Api.Controllers
 
                 var athlete = new Athlete
                 {
-                    Name = item.Name,
-                    Email = item.Email,
+                    Name = new AthleteName(item.Name),
+                    Email = new Email(item.Email),
                     MoneySpent = 0,
                     Status = AthleteStatusType.Regular,
                     StatusExpirationDate = null
@@ -126,7 +127,7 @@ namespace Api.Controllers
                     return BadRequest("Invalid athlete Id: " + id);
                 }
 
-                athlete.Name = item.Name;
+                athlete.Name = new AthleteName(item.Name);
                 athleteRepository.SaveChanges();
 
                 return Ok();
