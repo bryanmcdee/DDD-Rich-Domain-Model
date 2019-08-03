@@ -160,7 +160,7 @@ namespace Api.Controllers
                     return BadRequest("Invalid athlete Id: " + id);
                 }
 
-                if (athlete.PurchasedWorkoutRoutine.Any(x => x.WorkoutRoutineId == workoutRoutine.Id && (x.ExpirationDate == null || x.ExpirationDate.Value >= DateTime.UtcNow)))
+                if (athlete.PurchasedWorkoutRoutine.Any(x => x.WorkoutRoutineId == workoutRoutine.Id && !x.ExpirationDate.IsExpired))
                 {
                     return BadRequest("The workout routine is already purchased: " + workoutRoutine.Name);
                 }
@@ -189,7 +189,7 @@ namespace Api.Controllers
                     return BadRequest("Invalid athlete Id: " + id);
                 }
 
-                if (athlete.Status == AthleteStatusType.Advanced && (athlete.StatusExpirationDate == null || athlete.StatusExpirationDate.Value < DateTime.UtcNow))
+                if (athlete.Status == AthleteStatusType.Advanced && !athlete.StatusExpirationDate.IsExpired)
                 {
                     return BadRequest("The athlete already has the Advanced status");
                 }

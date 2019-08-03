@@ -1,22 +1,23 @@
 ﻿using System;
 using Logic.Entities;
+using Logic.ValueObjects;
 
 namespace Logic.Services
 {
     public class WorkoutRoutineService
     {
-        public DateTime? GetExpirationDate(LicensingModelType licensingModelType)
+        public ExpirationDate GetExpirationDate(LicensingModelType licensingModelType)
         {
-            DateTime? result;
+            ExpirationDate result;
 
             switch (licensingModelType)
             {
                 case LicensingModelType.TwoDays:
-                    result = DateTime.UtcNow.AddDays(2);
+                    result = (ExpirationDate)DateTime.UtcNow.AddDays(2);
                     break;
 
                 case LicensingModelType.LifeLong:
-                    result = null;
+                    result = ExpirationDate.Infinate;
                     break;
 
                 default:

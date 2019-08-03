@@ -14,7 +14,7 @@ namespace Logic.Services
             workoutRoutineService = workoutRoutineSvc;
         }
 
-        private Dollars CalculatePrice(AthleteStatusType athleteStatusType, DateTime? statusExpirationDate, LicensingModelType licensingModelType)
+        private Dollars CalculatePrice(AthleteStatusType athleteStatusType, ExpirationDate statusExpirationDate, LicensingModelType licensingModelType)
         {
             Dollars price;
             switch (licensingModelType)
@@ -32,7 +32,7 @@ namespace Logic.Services
                     throw new ArgumentOutOfRangeException();
             }
 
-            if (athleteStatusType == AthleteStatusType.Advanced && (statusExpirationDate == null || statusExpirationDate.Value >= DateTime.UtcNow))
+            if (athleteStatusType == AthleteStatusType.Advanced && !statusExpirationDate.IsExpired)
             {
                 price = price * 0.75m;
             }
@@ -42,7 +42,7 @@ namespace Logic.Services
 
         public void PurchaseWorkoutRoutine(Athlete athlete, WorkoutRoutine workoutRoutine)
         {
-            DateTime? expirationDate = workoutRoutineService.GetExpirationDate(workoutRoutine.LicensingModel);
+            ExpirationDate expirationDate = workoutRoutineService.GetExpirationDate(workoutRoutine.LicensingModel);
             Dollars price = CalculatePrice(athlete.Status, athlete.StatusExpirationDate, workoutRoutine.LicensingModel);
 
             var purchasedWorkoutRoutine = new PurchasedWorkoutRoutine
@@ -50,7 +50,8 @@ namespace Logic.Services
                 WorkoutRoutineId = workoutRoutine.Id,
                 AthleteId = athlete.Id,
                 ExpirationDate = expirationDate,
-                Price = price
+                Price = price,
+                PurchaseDate = DateTime.UtcNow
             };
 
             athlete.PurchasedWorkoutRoutine.Add(purchasedWorkoutRoutine);
@@ -60,7 +61,7 @@ namespace Logic.Services
         public bool UpgradeAthleteStatus(Athlete athlete)
         {
             // at least 2 active workout routines during the last 30 days
-            if (athlete.PurchasedWorkoutRoutine.Count(x => x.ExpirationDate == null || x.ExpirationDate.Value >= DateTime.UtcNow.AddDays(-30)) < 2)
+            if (athlete.PurchasedWorkoutRoutine.Count(x => x.ExpirationDate == ExpirationDate.Infinate || x.ExpirationDate.Date >= DateTime.UtcNow.AddDays(-30)) < 2)
                 return false;
 
             // at least 100 dollars spent during the last year
@@ -68,7 +69,7 @@ namespace Logic.Services
                 return false;
 
             athlete.Status = AthleteStatusType.Advanced;
-            athlete.StatusExpirationDate = DateTime.UtcNow.AddYears(1);
+            athlete.StatusExpirationDate = (ExpirationDate)DateTime.UtcNow.AddYears(1);
 
             return true;
         }
