@@ -75,7 +75,7 @@ namespace Api.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] Athlete item)
+        public IActionResult Create([FromBody] CreateAthleteDto item)
         {
             try
             {
@@ -89,9 +89,16 @@ namespace Api.Controllers
                     return BadRequest("Email is already in use: " + item.Email);
                 }
 
-                item.Id = 0;
-                item.Status = AthleteStatusType.Regular;
-                athleteRepository.Add(item);
+                var athlete = new Athlete
+                {
+                    Name = item.Name,
+                    Email = item.Email,
+                    MoneySpent = 0,
+                    Status = AthleteStatusType.Regular,
+                    StatusExpirationDate = null
+                };
+
+                athleteRepository.Add(athlete);
                 athleteRepository.SaveChanges();
 
                 return Ok();
@@ -104,7 +111,7 @@ namespace Api.Controllers
 
         [HttpPut]
         [Route("{id}")]
-        public IActionResult Update(long id, [FromBody] Athlete item)
+        public IActionResult Update(long id, [FromBody] UpdateAthleteDto item)
         {
             try
             {
