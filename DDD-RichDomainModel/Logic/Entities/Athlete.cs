@@ -9,16 +9,16 @@ namespace Logic.Entities
         private string _name;
         public virtual AthleteName Name
         {
-            get => AthleteName.Create(_name).Value;
-            set => _name = value.Value;
+            get => (AthleteName)_name;
+            set => _name = value;
         }
 
         private string _email;
 
         public virtual Email Email
         {
-            get => Email.Create(_email).Value;
-            set => _email = value.Value;
+            get => (Email)_email;
+            set => _email = value;
         }
 
         public virtual AthleteStatusType Status { get; set; }

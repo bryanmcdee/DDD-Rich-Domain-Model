@@ -33,5 +33,15 @@ namespace Logic.ValueObjects
         {
             return Value.GetHashCode();
         }
+
+        public static implicit operator string (AthleteName athleteName)
+        {
+            return athleteName.Value;
+        }
+
+        public static explicit operator AthleteName(string athleteName)
+        {
+            return Create(athleteName).Value;
+        }
     }
 }
