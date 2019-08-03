@@ -6,10 +6,24 @@ namespace Logic.ValueObjects
     {
         public string Value { get; }
 
-        public AthleteName(string value)
+        private AthleteName(string value)
         {
             Value = value;
         }
+
+        public static Result<AthleteName> Create(string athleteName)
+        {
+            athleteName = (athleteName ?? string.Empty).Trim();
+
+            if (athleteName.Length == 0)
+                return Result.Fail<AthleteName>("Athlete name should not be empty.");
+
+            if (athleteName.Length > 100)
+                return Result.Fail<AthleteName>("Athlete name can only be 100 characters long.");
+
+            return Result.Ok(new AthleteName(athleteName));
+        }
+
         protected override bool EqualsCore(AthleteName other)
         {
             return Value.Equals(other.Value, StringComparison.InvariantCultureIgnoreCase);

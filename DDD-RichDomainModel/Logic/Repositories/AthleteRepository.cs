@@ -2,6 +2,7 @@
 using System.Linq;
 using Logic.Entities;
 using Logic.Utils;
+using Logic.ValueObjects;
 
 namespace Logic.Repositories
 {
@@ -19,11 +20,11 @@ namespace Logic.Repositories
                 .ToList();
         }
 
-        public Athlete GetByEmail(string email)
+        public Athlete GetByEmail(Email email)
         {
             return _unitOfWork
                 .Query<Athlete>()
-                .SingleOrDefault(x => x.Email.Value == email);
+                .SingleOrDefault(x => x.Email == email);
         }
     }
 }

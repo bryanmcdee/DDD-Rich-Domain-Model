@@ -80,20 +80,23 @@ namespace Api.Controllers
         {
             try
             {
-                if (!ModelState.IsValid)
+                Result<AthleteName> athleteNameRequest = AthleteName.Create(item.Name);
+                Result<Email> emailRequest = Email.Create(item.Email);
+                Result result = Result.Combine(athleteNameRequest, emailRequest);
+                if (result.IsFailure)
                 {
-                    return BadRequest(ModelState);
+                    return BadRequest(result.Error);
                 }
 
-                if (athleteRepository.GetByEmail(item.Email) != null)
+                if (athleteRepository.GetByEmail(emailRequest.Value) != null)
                 {
                     return BadRequest("Email is already in use: " + item.Email);
                 }
 
                 var athlete = new Athlete
                 {
-                    Name = new AthleteName(item.Name),
-                    Email = new Email(item.Email),
+                    Name = athleteNameRequest.Value,
+                    Email = emailRequest.Value,
                     MoneySpent = 0,
                     Status = AthleteStatusType.Regular,
                     StatusExpirationDate = null
@@ -116,9 +119,10 @@ namespace Api.Controllers
         {
             try
             {
-                if (!ModelState.IsValid)
+                Result<AthleteName> athleteNameRequest = AthleteName.Create(item.Name);
+                if (athleteNameRequest.IsFailure)
                 {
-                    return BadRequest(ModelState);
+                    return BadRequest(athleteNameRequest.Error);
                 }
 
                 Athlete athlete = athleteRepository.GetById(id);
@@ -127,7 +131,7 @@ namespace Api.Controllers
                     return BadRequest("Invalid athlete Id: " + id);
                 }
 
-                athlete.Name = new AthleteName(item.Name);
+                athlete.Name = athleteNameRequest.Value;
                 athleteRepository.SaveChanges();
 
                 return Ok();
