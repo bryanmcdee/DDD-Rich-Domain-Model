@@ -19,4 +19,3 @@ DDD RichDomainModel/Api/bin/*
 DDD RichDomainModel/Logic/obj/*
 DDD RichDomainModel/Logic/debug/*
 DDD RichDomainModel/Logic/bin/*
-DDD RichDomainModel/.vs/config/applicationhost.config
