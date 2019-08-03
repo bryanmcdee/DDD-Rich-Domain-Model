@@ -4,18 +4,26 @@
 *.sln.docstates
 .vs/*
 
-DDD AnemicDomainModel/.vs/*
-DDD AnemicDomainModel/Api/obj/*
-DDD AnemicDomainModel/Api/debug/*
-DDD AnemicDomainModel/Api/bin/*
-DDD AnemicDomainModel/Logic/obj/*
-DDD AnemicDomainModel/Logic/debug/*
-DDD AnemicDomainModel/Logic/bin/*
+DDD-AnemicDomainModel/.vs/*
+DDD-AnemicDomainModel/Api/obj/*
+DDD-AnemicDomainModel/Api/debug/*
+DDD-AnemicDomainModel/Api/bin/*
+DDD-AnemicDomainModel/Logic/obj/*
+DDD-AnemicDomainModel/Logic/debug/*
+DDD-AnemicDomainModel/Logic/bin/*
 
-DDD RichDomainModel/.vs/*
-DDD RichDomainModel/Api/obj/*
-DDD RichDomainModel/Api/debug/*
-DDD RichDomainModel/Api/bin/*
-DDD RichDomainModel/Logic/obj/*
-DDD RichDomainModel/Logic/debug/*
-DDD RichDomainModel/Logic/bin/*
+DDD-RichDomainModel/.vs/*
+DDD-RichDomainModel/Api/obj/*
+DDD-RichDomainModel/Api/debug/*
+DDD-RihDomainModel/Api/bin/*
+DDD-RichDomainModel/Logic/obj/*
+DDD-RichDomainModel/Logic/debug/*
+DDD-RichDomainModel/Logic/bin/*
+DDD AnemicDomainModel/Api/bin/Debug/netcoreapp2.2/Logic.pdb
+DDD-RichDomainModel/Api/bin/Debug/netcoreapp2.2/Api.deps.json
+DDD-RichDomainModel/Api/bin/Debug/netcoreapp2.2/Api.dll
+DDD-RichDomainModel/Api/bin/Debug/netcoreapp2.2/Api.pdb
+DDD-RichDomainModel/Api/bin/Debug/netcoreapp2.2/Api.runtimeconfig.dev.json
+DDD-RichDomainModel/Api/bin/Debug/netcoreapp2.2/Api.runtimeconfig.json
+DDD-RichDomainModel/Api/bin/Debug/netcoreapp2.2/Logic.dll
+DDD-RichDomainModel/Api/bin/Debug/netcoreapp2.2/Logic.pdb
