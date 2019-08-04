@@ -93,15 +93,7 @@ namespace Api.Controllers
                     return BadRequest("Email is already in use: " + item.Email);
                 }
 
-                var athlete = new Athlete
-                {
-                    Name = athleteNameRequest.Value,
-                    Email = emailRequest.Value,
-                    MoneySpent = Dollars.Of(0),
-                    Status = AthleteStatusType.Regular,
-                    StatusExpirationDate = null
-                };
-
+                var athlete = new Athlete(athleteNameRequest.Value, emailRequest.Value);
                 athleteRepository.Add(athlete);
                 athleteRepository.SaveChanges();
 
