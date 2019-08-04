@@ -44,18 +44,8 @@ namespace Logic.Services
         {
             ExpirationDate expirationDate = workoutRoutineService.GetExpirationDate(workoutRoutine.LicensingModel);
             Dollars price = CalculatePrice(athlete.Status, athlete.StatusExpirationDate, workoutRoutine.LicensingModel);
-
-            var purchasedWorkoutRoutine = new PurchasedWorkoutRoutine
-            {
-                WorkoutRoutineId = workoutRoutine.Id,
-                AthleteId = athlete.Id,
-                ExpirationDate = expirationDate,
-                Price = price,
-                PurchaseDate = DateTime.UtcNow
-            };
-
-            athlete.PurchasedWorkoutRoutine.Add(purchasedWorkoutRoutine);
-            athlete.MoneySpent += price;
+            
+            athlete.AddPurchasedMovie(workoutRoutine, expirationDate, price);            
         }
 
         public bool UpgradeAthleteStatus(Athlete athlete)
