@@ -15,19 +15,13 @@ namespace Logic.Entities
         }
 
         private string _email;
-
         public virtual Email Email
         {
             get => (Email)_email;
-            set => _email = value;
+            protected set => _email = value;
         }
 
-        private DateTime? _statusExpirationDate;
-        public virtual ExpirationDate StatusExpirationDate
-        {
-            get => (ExpirationDate)_statusExpirationDate;
-            set => _statusExpirationDate = value;
-        }
+        public virtual AthleteStatus Status { get; set; }
 
         private decimal _moneySpent;
         public virtual Dollars MoneySpent
@@ -38,8 +32,6 @@ namespace Logic.Entities
 
         private readonly IList<PurchasedWorkoutRoutine> _purchasedWorkoutRoutine;
         public virtual IReadOnlyList<PurchasedWorkoutRoutine> PurchasedWorkoutRoutine => _purchasedWorkoutRoutine.ToList();
-
-        public virtual AthleteStatusType Status { get; set; }
 
         protected Athlete()
         {
@@ -52,8 +44,7 @@ namespace Logic.Entities
             _email = email ?? throw new ArgumentNullException(nameof(email));
 
             MoneySpent = Dollars.Of(0);
-            Status = AthleteStatusType.Regular;
-            StatusExpirationDate = null;
+            Status = AthleteStatus.Regular;
         }
 
         public virtual void AddPurchasedMovie(WorkoutRoutine workoutRoutine, ExpirationDate expirationDate, Dollars price)

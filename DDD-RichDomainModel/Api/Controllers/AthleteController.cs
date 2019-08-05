@@ -39,8 +39,8 @@ namespace Api.Controllers
                 Id = athlete.Id,
                 Name = athlete.Name.Value,
                 Email = athlete.Email.Value,
-                Status = athlete.Status.ToString(),
-                StatusExpirationDate = athlete.StatusExpirationDate,
+                Status = athlete.Status.Type.ToString(),
+                StatusExpirationDate = athlete.Status.ExpirationDate,
                 MoneySpent = athlete.MoneySpent,
                 PurchasedWorkoutRoutine = athlete.PurchasedWorkoutRoutine.Select(s => new PurchasedWorkoutRoutineDto()
                 {
@@ -67,8 +67,8 @@ namespace Api.Controllers
                 Id = s.Id,
                 Name = s.Name.Value,
                 Email = s.Email.Value,
-                Status = s.Status.ToString(),
-                StatusExpirationDate = s.StatusExpirationDate,
+                Status = s.Status.Type.ToString(),
+                StatusExpirationDate = s.Status.ExpirationDate,
                 MoneySpent = s.MoneySpent,
             }).ToList();
 
@@ -181,7 +181,7 @@ namespace Api.Controllers
                     return BadRequest("Invalid athlete Id: " + id);
                 }
 
-                if (athlete.Status == AthleteStatusType.Advanced && !athlete.StatusExpirationDate.IsExpired)
+                if (athlete.Status.IsAdvanced)
                 {
                     return BadRequest("The athlete already has the Advanced status");
                 }

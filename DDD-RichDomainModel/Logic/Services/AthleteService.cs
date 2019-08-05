@@ -14,7 +14,7 @@ namespace Logic.Services
             workoutRoutineService = workoutRoutineSvc;
         }
 
-        private Dollars CalculatePrice(AthleteStatusType athleteStatusType, ExpirationDate statusExpirationDate, LicensingModelType licensingModelType)
+        private Dollars CalculatePrice(AthleteStatus athleteStatus, LicensingModelType licensingModelType)
         {
             Dollars price;
             switch (licensingModelType)
@@ -32,7 +32,7 @@ namespace Logic.Services
                     throw new ArgumentOutOfRangeException();
             }
 
-            if (athleteStatusType == AthleteStatusType.Advanced && !statusExpirationDate.IsExpired)
+            if (athleteStatus.IsAdvanced)
             {
                 price = price * 0.75m;
             }
@@ -43,9 +43,9 @@ namespace Logic.Services
         public void PurchaseWorkoutRoutine(Athlete athlete, WorkoutRoutine workoutRoutine)
         {
             ExpirationDate expirationDate = workoutRoutineService.GetExpirationDate(workoutRoutine.LicensingModel);
-            Dollars price = CalculatePrice(athlete.Status, athlete.StatusExpirationDate, workoutRoutine.LicensingModel);
+            Dollars price = CalculatePrice(athlete.Status, workoutRoutine.LicensingModel);
             
-            athlete.AddPurchasedMovie(workoutRoutine, expirationDate, price);            
+            athlete.AddPurchasedMovie(workoutRoutine, expirationDate, price);        
         }
 
         public bool UpgradeAthleteStatus(Athlete athlete)
@@ -58,8 +58,7 @@ namespace Logic.Services
             if (athlete.PurchasedWorkoutRoutine.Where(x => x.PurchaseDate > DateTime.UtcNow.AddYears(-1)).Sum(x => x.Price) < 100m)
                 return false;
 
-            athlete.Status = AthleteStatusType.Advanced;
-            athlete.StatusExpirationDate = (ExpirationDate)DateTime.UtcNow.AddYears(1);
+            athlete.Status = athlete.Status.UpgradeToAdvanced();
 
             return true;
         }
