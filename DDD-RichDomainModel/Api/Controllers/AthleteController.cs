@@ -46,7 +46,7 @@ namespace Api.Controllers
                 {
                     WorkoutRoutine = new WorkoutRoutineDto()
                     {
-                        Id = s.WorkoutRoutineId,
+                        Id = s.WorkoutRoutine.Id,
                         Name = s.WorkoutRoutine.Name
                     },
                     Price = s.Price,
@@ -152,7 +152,7 @@ namespace Api.Controllers
                     return BadRequest("Invalid athlete Id: " + id);
                 }
 
-                if (athlete.PurchasedWorkoutRoutine.Any(x => x.WorkoutRoutineId == workoutRoutine.Id && !x.ExpirationDate.IsExpired))
+                if (athlete.PurchasedWorkoutRoutine.Any(x => x.WorkoutRoutine.Id == workoutRoutine.Id && !x.ExpirationDate.IsExpired))
                 {
                     return BadRequest("The workout routine is already purchased: " + workoutRoutine.Name);
                 }

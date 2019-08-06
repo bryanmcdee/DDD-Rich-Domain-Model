@@ -13,8 +13,8 @@ namespace Logic.Mappings
             Map(x => x.Price).CustomType<decimal?>().Access.CamelCaseField(Prefix.Underscore);
             Map(x => x.PurchaseDate);
             Map(x => x.ExpirationDate).CustomType<DateTime?>().Access.CamelCaseField(Prefix.Underscore).Nullable();
-            Map(x => x.WorkoutRoutineId);
-            Map(x => x.AthleteId);
+            Map(x => x.WorkoutRoutine);
+            Map(x => x.Athlete);
 
             References(x => x.WorkoutRoutine).LazyLoad(Laziness.False).ReadOnly();
         }

@@ -49,15 +49,7 @@ namespace Logic.Entities
 
         public virtual void AddPurchasedMovie(WorkoutRoutine workoutRoutine, ExpirationDate expirationDate, Dollars price)
         {
-            var purchasedWorkoutRoutine = new PurchasedWorkoutRoutine
-            {
-                WorkoutRoutineId = workoutRoutine.Id,
-                AthleteId = Id,
-                ExpirationDate = expirationDate,
-                Price = price,
-                PurchaseDate = DateTime.UtcNow
-            };
-
+            var purchasedWorkoutRoutine = new PurchasedWorkoutRoutine(workoutRoutine, this, price, expirationDate); 
             _purchasedWorkoutRoutine.Add(purchasedWorkoutRoutine);
             MoneySpent += price;
         }
