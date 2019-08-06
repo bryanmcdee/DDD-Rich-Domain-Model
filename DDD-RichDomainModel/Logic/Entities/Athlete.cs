@@ -47,11 +47,29 @@ namespace Logic.Entities
             Status = AthleteStatus.Regular;
         }
 
-        public virtual void AddPurchasedMovie(WorkoutRoutine workoutRoutine, ExpirationDate expirationDate, Dollars price)
+        public virtual void PurchaseWorkoutRoutine(WorkoutRoutine workoutRoutine)
         {
+            ExpirationDate expirationDate = workoutRoutine.GetExpirationDate();
+            Dollars price = workoutRoutine.CalculatePrice(Status);
+
             var purchasedWorkoutRoutine = new PurchasedWorkoutRoutine(workoutRoutine, this, price, expirationDate); 
             _purchasedWorkoutRoutine.Add(purchasedWorkoutRoutine);
             MoneySpent += price;
+        }
+
+        public virtual bool UpgradeStatusToAdvanced()
+        {
+            // at least 2 active workout routines during the last 30 days
+            if (PurchasedWorkoutRoutine.Count(x => x.ExpirationDate == ExpirationDate.Infinate || x.ExpirationDate.Date >= DateTime.UtcNow.AddDays(-30)) < 2)
+                return false;
+
+            // at least 100 dollars spent during the last year
+            if (PurchasedWorkoutRoutine.Where(x => x.PurchaseDate > DateTime.UtcNow.AddYears(-1)).Sum(x => x.Price) < 100m)
+                return false;
+
+            Status = Status.UpgradeToAdvanced();
+
+            return true;
         }
     }
 }

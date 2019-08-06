@@ -4,7 +4,6 @@ using System.Linq;
 using Logic.Dtos;
 using Logic.Entities;
 using Logic.Repositories;
-using Logic.Services;
 using Logic.ValueObjects;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,13 +14,11 @@ namespace Api.Controllers
     {
         private readonly WorkoutRoutineRepository workoutRoutineRepository;
         private readonly AthleteRepository athleteRepository;
-        private readonly AthleteService athleteService;
 
-        public AthleteController(WorkoutRoutineRepository workoutRoutineRepo, AthleteRepository athleteRepo, AthleteService athleteSvc)
+        public AthleteController(WorkoutRoutineRepository workoutRoutineRepo, AthleteRepository athleteRepo)
         {
             athleteRepository = athleteRepo;
             workoutRoutineRepository = workoutRoutineRepo;
-            athleteService = athleteSvc;
         }
 
         [HttpGet]
@@ -157,7 +154,7 @@ namespace Api.Controllers
                     return BadRequest("The workout routine is already purchased: " + workoutRoutine.Name);
                 }
 
-                athleteService.PurchaseWorkoutRoutine(athlete, workoutRoutine);
+                athlete.AddPurchasedMovie(workoutRoutine);
 
                 athleteRepository.SaveChanges();
 
@@ -186,7 +183,7 @@ namespace Api.Controllers
                     return BadRequest("The athlete already has the Advanced status");
                 }
 
-                bool success = athleteService.UpgradeAthleteStatus(athlete);
+                bool success = athlete.UpgradeStatusToAdvanced();
                 if (!success)
                 {
                     return BadRequest("Cannot upgrade the athlete");

@@ -26,6 +26,11 @@ namespace Logic.ValueObjects
             return new AthleteStatus(AthleteStatusType.Advanced, ExpirationDate.Create(DateTime.UtcNow.AddYears(1)).Value);
         }
 
+        public decimal GetDiscount()
+        {
+            return IsAdvanced ? 0.25m : 0m;
+        }
+
         protected override bool EqualsCore(AthleteStatus other)
         {
             return Type == other.Type && ExpirationDate == other.ExpirationDate;

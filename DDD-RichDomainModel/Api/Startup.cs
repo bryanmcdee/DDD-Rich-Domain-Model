@@ -1,5 +1,4 @@
 ﻿using Logic.Repositories;
-using Logic.Services;
 using Logic.Utils;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -26,8 +25,6 @@ namespace Api
             services.AddScoped<UnitOfWork>();
             services.AddTransient<WorkoutRoutineRepository>();
             services.AddTransient<AthleteRepository>();
-            services.AddTransient<WorkoutRoutineService>();
-            services.AddTransient<AthleteService>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
