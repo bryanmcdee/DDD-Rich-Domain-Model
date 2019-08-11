@@ -13,4 +13,4 @@ Navigate to DDD-Rich-Domain-Model\Database
  - update database.config.json  
  - run .\bulddb.ps1 to create and seed the database   
  
-Project and some of the code was inspired by [EnterpriseCraftsmanship.com](https://enterprisecraftsmanship.com/2015/01/03/value-objects-explained/).  
+This project and code was inspired by [EnterpriseCraftsmanship.com](https://enterprisecraftsmanship.com/2015/01/03/value-objects-explained/).    
