@@ -10,7 +10,7 @@ There are several sections:
 # Getting Started  
 Clone the repository  
 Navigate to DDD-Rich-Domain-Model\Database  
- - update database.config.json  
- - run .\bulddb.ps1 to create and seed the database   
+ - update database.config.json with your database settings (connection string, etc).    
+ - run .\bulddb.ps1 to create and seed the database.     
  
 This project and code was inspired by [EnterpriseCraftsmanship.com](https://enterprisecraftsmanship.com/2015/01/03/value-objects-explained/).    
