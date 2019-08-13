@@ -32,6 +32,15 @@ DDD-RichDomainModel-CleanArchitecture/.vs/*
 DDD-RichDomainModel-CleanArchitecture/Api/obj/*
 DDD-RichDomainModel-CleanArchitecture/Api/debug/*
 DDD-RichDomainModel-CleanArchitecture/Api/bin/*
+DDD-RichDomainModel-CleanArchitecture/Common/obj/*
+DDD-RichDomainModel-CleanArchitecture/Common/debug/*
+DDD-RichDomainModel-CleanArchitecture/Common/bin/*
+DDD-RichDomainModel-CleanArchitecture/Domain/obj/*
+DDD-RichDomainModel-CleanArchitecture/Domain/debug/*
+DDD-RichDomainModel-CleanArchitecture/Domain/bin/*
+DDD-RichDomainModel-CleanArchitecture/Infrastructure/obj/*
+DDD-RichDomainModel-CleanArchitecture/Infrastructure/debug/*
+DDD-RichDomainModel-CleanArchitecture/Infrastructure/bin/*
 DDD-RichDomainModel-CleanArchitecture/Logic/obj/*
 DDD-RichDomainModel-CleanArchitecture/Logic/debug/*
 DDD-RichDomainModel-CleanArchitecture/Logic/bin/*
