@@ -15,7 +15,7 @@ DDD-AnemicDomainModel/Logic/bin/*
 DDD-RichDomainModel/.vs/*
 DDD-RichDomainModel/Api/obj/*
 DDD-RichDomainModel/Api/debug/*
-DDD-RihDomainModel/Api/bin/*
+DDD-RichDomainModel/Api/bin/*
 DDD-RichDomainModel/Logic/obj/*
 DDD-RichDomainModel/Logic/debug/*
 DDD-RichDomainModel/Logic/bin/*
@@ -27,3 +27,11 @@ DDD-RichDomainModel/Api/bin/Debug/netcoreapp2.2/Api.runtimeconfig.dev.json
 DDD-RichDomainModel/Api/bin/Debug/netcoreapp2.2/Api.runtimeconfig.json
 DDD-RichDomainModel/Api/bin/Debug/netcoreapp2.2/Logic.dll
 DDD-RichDomainModel/Api/bin/Debug/netcoreapp2.2/Logic.pdb
+
+DDD-RichDomainModel-CleanArchitecture/.vs/*
+DDD-RichDomainModel-CleanArchitecture/Api/obj/*
+DDD-RichDomainModel-CleanArchitecture/Api/debug/*
+DDD-RichDomainModel-CleanArchitecture/Api/bin/*
+DDD-RichDomainModel-CleanArchitecture/Logic/obj/*
+DDD-RichDomainModel-CleanArchitecture/Logic/debug/*
+DDD-RichDomainModel-CleanArchitecture/Logic/bin/*

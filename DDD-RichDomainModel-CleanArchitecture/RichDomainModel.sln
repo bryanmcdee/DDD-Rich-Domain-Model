@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{89503B12-3453-4922-A899-44FDF54FF01E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{34409286-B707-47C6-A472-DC121453DE7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89503B12-3453-4922-A899-44FDF54FF01E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89503B12-3453-4922-A899-44FDF54FF01E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89503B12-3453-4922-A899-44FDF54FF01E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89503B12-3453-4922-A899-44FDF54FF01E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34409286-B707-47C6-A472-DC121453DE7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34409286-B707-47C6-A472-DC121453DE7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34409286-B707-47C6-A472-DC121453DE7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34409286-B707-47C6-A472-DC121453DE7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C703560-4DC6-410B-9CC4-0D3072E818DB}
+	EndGlobalSection
+EndGlobal
