@@ -154,7 +154,7 @@ namespace Api.Controllers
                     return BadRequest("The workout routine is already purchased: " + workoutRoutine.Name);
                 }
 
-                athlete.AddPurchasedMovie(workoutRoutine);
+                athlete.PurchaseWorkoutRoutine(workoutRoutine);
 
                 athleteRepository.SaveChanges();
 
